@@ -3,8 +3,8 @@ let winners = [];
 
 function resetGame(){
     winners = [];
-    document.querySelector(".playerScore").textContent = "Score: 0";
-    document.querySelector(".computerScore").textContent = "Score: 0";
+    document.querySelector(".playerScore").textContent = "Your Score: 0";
+    document.querySelector(".computerScore").textContent = "Computer Score: 0";
     document.querySelector(".ties").textContent = "Ties: 0";
     document.querySelector(".winner").textContent = "";
     document.querySelector(".playerChoice").textContent = "";
@@ -77,14 +77,14 @@ function tallyWins(){
     let playerWins = winners.filter(item => item == "Player").length;
     let computerWins = winners.filter(item => item == "Computer").length;
     let ties = winners.filter((item) => item == "Tie").length;
-    document.querySelector('.playerScore').textContent = `Score: ${playerWins}`
-    document.querySelector('.computerScore').textContent = `Score: ${computerWins}`
+    document.querySelector('.playerScore').textContent = `Your Score: ${playerWins}`
+    document.querySelector('.computerScore').textContent = `Computer Score: ${computerWins}`
     document.querySelector('.ties').textContent = `Ties: ${ties}`
 
 }
 
 
-function computerSelection(){
+function computerSelection (){
     //todo - update the dom with computer selection
     let choice = choices[Math.floor(Math.random() * choices.length)]
 
@@ -92,7 +92,7 @@ function computerSelection(){
 
     setTimeout(() => {
         document.querySelector(`.${choice}`).classList.remove("active");
-    }, 700)
+    }, 350)
 
     return choice
 };
