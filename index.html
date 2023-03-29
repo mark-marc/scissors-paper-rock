@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type = "text/javascript" src="index.js"></script>
+    <title>Rock-Paper-Scissors with UI </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+    </style>
+    
+    <link rel = "stylesheet" href = "styles.css">
+    
+
 </head>
+
 <body>
-    Scissors paper rock
+    <div class="score">
+        <h1 class = "ties">Ties: 0</h1>
+    </div>
+    <div class="winnerDiv">
+        <h1 class="winner">Round Winner:</h1>
+        <button class="reset" onclick="resetGame()">Play Again?</button>
+    </div>
+    <div class="playerSection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Your Score: 0</h3>
+        <div class="playerImgs">
+            <img src="./images/rock.png" alt="rock" class="pimg" id="rock">
+            <img src="./images/paper.png" alt="paper" class="pimg" id="paper">
+            <img src="./images/scissors.png" alt="scissors" class="pimg" id="scissors">
+
+        </div>
+    </div>
+    <div class="computerSelection">
+        <h3 class="computerChoice"></h3>
+        <h3 class="computerScore">Computer Score: 0</h3>
+        <div class="computerImgs">
+            <img src="./images/rock.png" alt="rock" class="rock pimg"  >
+            <img src="./images/paper.png" alt="paper" class="paper pimg" >
+            <img src="./images/scissors.png" alt="scissors" class="scissors pimg" >
+
+        </div>
+    </div>
 </body>
+<script src = "index.js"></script>
+
+
 </html>

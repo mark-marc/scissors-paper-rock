@@ -1,0 +1,26 @@
+
+
+.reset {
+    display: none;
+    text-align: center;
+    margin-left: 47%;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    
+}
+
+.reset:hover {
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+    background: grey;
+    font-family: 'Lato', sans-serif;
+}
+
+.pimg {
+    height: 200px;
+    height: 200px;
+}
